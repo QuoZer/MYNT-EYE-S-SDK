@@ -1,0 +1,29 @@
+%YAML:1.0
+---
+version: "1.2"
+img_params:
+   # There are two params of resolution [640x400], [1280x800].
+   # If you only set one of them, write will keep another params if it exists.
+   -
+      model: 1
+      width: 640
+      height: 400
+      in_left:
+         # coeffs: k2,k3,k4,k5,mu,mv,u0,v0
+         coeffs: [ -0.08436592, -0.00650502,
+             -0.05893128, 0.0588768,
+             373.76382992, 373.36866817,
+             316.02657558, 191.46234444 ]
+      in_right:
+         coeffs: [ -0.08175926, -0.03038816,
+             0.00417138, 0.00746778,
+             375.79173175, 375.2724139,
+             320.15376033, 197.8505386 ]
+      ex_right_to_left:
+         rotation: [ 0.9999743, -0.0002282,
+             -0.0071616, 0.0001971,
+             0.9999906, 0.0043343,
+             -0.0071625, -0.0043328,
+             0.9999650 ]
+         translation: [ -80.1739, -0.0849,
+             -0.4170 ]
