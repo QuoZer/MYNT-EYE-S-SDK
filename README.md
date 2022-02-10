@@ -4,7 +4,7 @@
 
 ## Fork changes
 
-This fork incorporates fixes to some of the issues mentioned on the original repo page. 
+This fork incorporates fixes to some of the issues mentioned on the original repo page. ROS Wrapper nodelet was updated to support plugins. 
 
 
 ## Overview
@@ -30,9 +30,20 @@ Get plugin files (and some old sdk docs): [PLUGINS_DRIVE][https://drive.google.c
 ## Firmwares
 
 ~~[MYNTEYE_BOX]: http://doc.myntai.com/mynteye/s/download~~
+
 Old docs on firmware upgrade: [SDK v1.8][https://slightech.github.io/MYNT-EYE-SDK/upgrade_firmware.html]
 
 Get firmwares from our online disks: [FIRMWARE_DRIVE][https://drive.google.com/drive/folders/1rz7swzOp9zp7Xty-o2cJzLgFYnC71WQZ].
+
+
+## Config 
+
+There are quite a few config files you may find useful: 
+* The ROS Wrapper settings are listed in `wrappers/ros/src/mynt_eye_ros_wrapper/config/process/process_config.yaml`. Disparity algorithm, plugin path and native streams can be set up there. 
+* The settings controlling camera sensor parameters cam be accesed and edited via `wrappers/ros/src/mynt_eye_ros_wrapper/config/device`
+* ...
+
+
 
 ## Usage
 
