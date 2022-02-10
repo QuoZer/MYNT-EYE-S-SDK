@@ -26,14 +26,14 @@ Please follow the guide doc to install the SDK on different platforms.
 
 ## Plugins 
 
-Get plugin files (and some old sdk docs): [PLUGINS_DRIVE][https://drive.google.com/drive/folders/1eG66rmCCOMrQVYaU8FvtJOEsnEEaxYVc]
+Get plugin files (and some old sdk docs): [PLUGINS_DRIVE](https://drive.google.com/drive/folders/1eG66rmCCOMrQVYaU8FvtJOEsnEEaxYVc)
 ## Firmwares
 
 ~~[MYNTEYE_BOX]: http://doc.myntai.com/mynteye/s/download~~
 
-Old docs on firmware upgrade: [SDK v1.8][https://slightech.github.io/MYNT-EYE-SDK/upgrade_firmware.html]
+Old docs on firmware upgrade: [SDK v1.8](https://slightech.github.io/MYNT-EYE-SDK/upgrade_firmware.html)
 
-Get firmwares from our online disks: [FIRMWARE_DRIVE][https://drive.google.com/drive/folders/1rz7swzOp9zp7Xty-o2cJzLgFYnC71WQZ].
+Get firmwares from our online disks: [FIRMWARE_DRIVE](https://drive.google.com/drive/folders/1rz7swzOp9zp7Xty-o2cJzLgFYnC71WQZ).
 
 
 ## Config 
