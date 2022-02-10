@@ -1,11 +1,13 @@
 # disparity computing method type
 # sgbm: 0
 # bm: 1
-disparity_computing_method: 1
+disparity_computing_method: 0
+enable_plugin: true
+plugin_path: /home/roser/repos/MYNT-EYE-S-SDK/plugins/linux-x86_64/libplugin_g_cuda10.1_opencv3.4.1.so
 
 enable_left_rect: false
 enable_right_rect: false
 enable_disparity: false
-enable_disparity_norm: false
+enable_disparity_norm: true
 enable_points: false
 enable_depth: false

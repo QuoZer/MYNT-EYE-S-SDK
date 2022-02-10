@@ -260,11 +260,21 @@ class ROSWrapperNodelet : public nodelet::Nodelet {
     gravity_ = 9.8;
     private_nh_.getParamCached("gravity", gravity_);
 
+    bool enable_plugin = false;
+    std::string plugin_path;
+    private_nh_.getParamCached("enable_plugin", enable_plugin);
+    private_nh_.getParamCached("plugin_path", plugin_path);
+    if (enable_plugin) {
+      LOG(INFO) << "Enabling plugin: " << plugin_path;
+      api_->EnablePlugin(plugin_path);
+    }
+
+
     int tmp_disparity_type_ = 0;
     disparity_type_ = DisparityComputingMethod::BM;
     private_nh_.getParamCached("disparity_computing_method", tmp_disparity_type_);
     disparity_type_ = (DisparityComputingMethod)tmp_disparity_type_;
-    api_->SetDisparityComputingMethodType(disparity_type_);
+    api_->SetDisparityComputingMethodType(disparity_type_);  //(DisparityComputingMethod)DisparityComputingMethod::SGBM
 
     // device options of standard210a
     if (model_ == Model::STANDARD210A) {

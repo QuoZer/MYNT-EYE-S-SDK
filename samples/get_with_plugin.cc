@@ -29,8 +29,9 @@ int main(int argc, char *argv[]) {
 
   api->setDuplicate(true);
 
-  api->EnablePlugin("plugins/libplugin_g_cuda9.2_opencv3.3.1.so");
+  api->EnablePlugin("/home/roser/repos/MYNT-EYE-S-SDK/plugins/linux-x86_64/libplugin_g_cuda10.1_opencv3.4.1.so");
 
+  api->SetDisparityComputingMethodType(DisparityComputingMethod::SGBM);
   api->EnableStreamData(Stream::DISPARITY_NORMALIZED);
 
   api->Start(Source::VIDEO_STREAMING);
