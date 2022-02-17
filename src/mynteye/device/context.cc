@@ -28,9 +28,10 @@ Context::Context() : context_(uvc::create_context()) {
     auto vid = uvc::get_vendor_id(*device);
     auto pid = uvc::get_product_id(*device);
     // auto video_name = uvc::get_video_name(*device);
-    VLOG(2) << "UVC device detected, name: " << name << ", vid: 0x" << std::hex
+    LOG(ERROR) << "UVC device detected, name: " << name << ", vid: 0x" << std::hex
             << vid << ", pid: 0x" << std::hex << pid;
-    if (vid == MYNTEYE_VID) {
+    if (vid == MYNTEYE_VID) { //
+      //name = "MYNTEYE";   // HACK
       auto d = Device::Create(name, device);
       if (d) {
         devices_.push_back(d);
